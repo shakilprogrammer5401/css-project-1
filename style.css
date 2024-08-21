@@ -1,172 +1,366 @@
+
+/*common code start*/
+
+:root{
+    --font-size : 80px;
+    --transition: 1s;
+}
+
+/*common code  end*/
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-/* Common css style Start */
-img{
-    .container{
-        max-width: 1240px;
-        margin: 0% auto;
-    }
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.between{
-    display: grid;
-    gap: 5rem;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    align-items: center;
+nav{
+display: flex;
+align-items: center;
+padding: 20px 90px;
+gap: 60px;
 }
-/* Common css style Start */
+nav h3{
+font-size: 30px;
+font-weight: bold;
+}
 
-
-
-.navbar{
-    max-width: 93%;
-    margin: 0% auto;
+nav div{
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 5px;
+    padding: 5px 8px;
     display: flex;
-    gap: 60px;
-    padding: 20px 40px;
-    color: #0b0736;
-
-    & h3{
-        font-weight: bold;
-        font-size: 24px;
-    }
-
-        & div{
-            border: 1px solid gainsboro;
-            padding: 8px;
-            display: flex;
-            gap: 8px;
-            font-weight: 600px;
-            border-radius: 5px;
-        }
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.menu-icon-{
+    height: 32px;
+    width: 30px;
+   
 }
 
-.banner-image{
+/* hero start */
+.img1{
     position: absolute;
-    width: 50vw;
     right: 0;
     top: 0;
-    z-index: -155;
+    width: 700px;
 }
 
-.banner-section{
-    padding: 120px 0;
-    
-    & h1{
-        font-size: 65px;
-        font-weight: 600;
-        color: #0b0736;
-        margin: 0 0 0 113px;
-    }
-    & div{
-        padding: 20px 115px;
-        display: flex;
-        gap: 4px;
-        color: #0b0736;
-        align-items: center;
-        justify-items: center;
-        font-size: 26px;
-    }
+.left-side{
+    padding: 120px 0 0 168px;
+    max-width: 750px;
 }
-
-.button1{
+.left-side h1 {
+font-size: 95px;
+font-weight: 900;
+color:#0B0736;
+}
+.left-side p{
+    display: inline-block;
+    font-size: 30px;
+     margin-top: 10px;
+   
+}
+.left-side .btn{
+    background-color: #0B0736;
     color: white;
-    background-color: #0b0736;
-    border-radius: 12px;
-    font-size: 44px;
-    font-weight: 500;
-    margin: 0 0 0 116px;
-    cursor: pointer;
+    padding: 18px 40px;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: 1s;
     border: none;
-    padding: 12px;
-}
-
-.target-section{
-    padding: 140px 0;
-
-    & img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .details-section{
-
-        & h2{
-            font-size: 68px;
-            font-weight: 550;
-        }
-        .details{
-            padding: 40px 0;
-            color: black;
-            font-size: 24px;
-            font-weight: 400;
-        }
-
-        & .store-design{
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 16px 28px;
-            color: black;
-            border-radius: 20px;
-            background-color: aquamarine;
-            width: fit-content;
-
-            & p{
-                font-size: 12px;
-                
-            }
-            h3{
-                font-size: 18px;
-                font-weight: 600;
-            }
-            & img{
-                width: 25px;
-            }
-        }
-    }
+    outline: none;
 
 }
 
-/* Track section */
-.track-section{
-    position: relative;
+
+.left-side .btn:hover{
+    cursor: pointer;
 
 }
-     & .bg-track{
-        position: absolute;
-        z-index: -1;
-        /* left: 0%;
-        top:10% */
-    }
+/* hero end */
 
-    .left-section{
-        font-size: 85px;
-    }
 
-img.grid{
-    padding-top: 80px;
-    padding-left: 80px;
+
+/* Set your own targets  section start  */
+.target{
     display: flex;
-    gap: 20px;
-
-    & div{
-        width: 150px;
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 20px;
-        & div:nth-child(2)
-        margin-top: ;
-    }
-
+    /* justify-content: space-around; */
+    align-items: center;
+    padding-left: 40px;
+    margin-top: 180px;
+}
+.target-img{
+   width: 600px;
+   object-fit: cover;
+}
+.target h1{
+    font-size: 80px;
+}
+.target p{
+    font-size: 24px;
+    color: gray;
+    margin-top: 50px
 }
 
+.target-right{
+    margin-left: 110px;
+}
+.app-store{
+    background-color: rgb(204, 232, 253);
+    padding: 16px 50px;
+    border-radius: 20px;
+    width: 250px;
+    position: relative;
+    margin-top: 20px;
+font-size: 20px;
+text-align: center;
+
+}
+.black-apple{
+    position: absolute;
+    left: 20px;
+    width: 38px;
+}
+
+/* Set your own targets section  end  */
+
+
+
+
+/* Track anywhere, anytime section start */
+.track{
+    margin-top: 186px;
+    background-image: url(./images/bg\ 3.png);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 80px;
+}
+
+.track .left-section h1{
+    font-size: var(--font-size);
+    left: 70px;
+    position: absolute;
+    top: -120px;
+}
+
+
+.track .l1{
+ 
+    position: absolute;
+    top: 168px;
+    left: 102px;
+}
+.track .l2{
+    top: 178px;
+    left: 285px;
+    position: absolute;
+}
+.track .l3{
+    top: 410px;
+    left: 103px;
+    position: absolute;
+}
+.track .l4{
+    top: 418px;
+    left: 285px;
+    position: absolute;
+}
+
+.track .right-section{
+position: relative;
+}
+.track .right-section h4{
+    position: absolute;
+    top: -65px;
+    left: 608px;
+    right: 0;
+    font-size: 40px;
+    color: #9393C4;
+    font-weight: 400;
+}
+ 
+.track .right-section .balanced{
+position: absolute;
+top: 193px;
+left: 774px;
+}
+
+ 
+.track .right-section .balanced h3{
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+.track .right-section .balanced p{
+    font-size: 25px;
+    color: #9696C6;
+}
+.percent{
+    position: absolute;
+
+    top: 178px;
+    right: 431px
+}
+
+.camera{
+   
+    top: 340px;
+    right: 418px;
+    position: absolute;
+}
+
+.track .right-section .barcode-scanner{
+    position: absolute;
+    top: 366px;
+    right: 117px;
+}
+    
+
+    .track .right-section .barcode-scanner h3{
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    .track .right-section .barcode-scanner p{
+        font-size: 25px;
+        color: #9696C6;
+    }
+   
+/* Track anywhere, anytime  section end */
+
+
+
+
+
+
+
+
+
+
+/* Set your own targets section start  */
+.calories{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    padding-left: 40px;
+    margin-top: 180px;
+}
+.calories-img{
+   width: 600px;
+   object-fit: cover;
+   margin-left: 60px;
+}
+.calories h1{
+    font-size: 80px;
+}
+.calories p{
+    font-size: 24px;
+    color: gray;
+    margin-top: 50px
+}
+
+.calories-right{
+    margin-left: 110px;
+}
+.app-store{
+    background-color: rgb(204, 232, 253);
+    padding: 16px 50px;
+    border-radius: 20px;
+    width: 250px;
+    position: relative;
+    margin-top: 20px;
+font-size: 20px;
+text-align: center;
+
+}
+.black-apple{
+    position: absolute;
+    left: 20px;
+    width: 38px;
+}
+
+/* Set your own targets section end  */
+/* 
+companies section start */
+.companies{
+width: 90%;
+margin: 90px auto;
+}
+
+
+.companies img{
+    width: 100%;
+    height: 100%;
+    margin-top: 160px;
+}
+companies section start */
+
+
+/* last section start */
+.last-section .days-7{
+    padding: 20px;
+    margin-top: 50px;
+}
+.last-section{
+background-color: aquamarine;
+max-width: 1200px;
+margin: 0 auto;
+border-radius: 40px;
+display: flex;
+padding-left: 50px;
+gap: 60px;
+align-items: center;
+margin-bottom: 100px;
+}
+
+
+
+
+.app-store2{
+    background-color:#130F49;
+    padding: 16px 50px;
+    border-radius: 20px;
+    width: 250px;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 45px;
+font-size: 20px;
+text-align: center;
+color: white;
+
+}
+.white-apple{
+    position: absolute;
+    left: 20px;
+    width: 38px;
+}
+
+.last-section .free{
+font-size: var(--font-size);
+border: 2p solid red;
+padding-left: 50px;
+}
+/* last section end */
+
+
+
+/*footer section start */
+
+footer p{
+    text-align: center;
+    color: rgb(147, 147, 196);
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/*footer section end */
 
 
 
